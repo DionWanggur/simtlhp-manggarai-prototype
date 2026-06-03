@@ -1,0 +1,74 @@
+:root{
+  --manggarai-navy:#001f3f;
+  --manggarai-blue:#003b73;
+  --manggarai-gold:#f6c23e;
+}
+.card-primary.card-outline { border-top: 3px solid var(--manggarai-navy); }
+.btn-primary, .bg-primary { background-color: var(--manggarai-navy) !important; border-color: var(--manggarai-navy) !important; }
+.main-sidebar { background-color: var(--manggarai-navy) !important; }
+.brand-link { border-bottom: 1px solid rgba(255,255,255,.15) !important; }
+.hero-section {
+  background: linear-gradient(135deg, var(--manggarai-navy) 0%, var(--manggarai-blue) 100%);
+  color: #fff; padding: 48px 24px; text-align: center; border-radius: 12px; margin-bottom: 24px;
+}
+.info-chip{display:inline-block;border-radius:999px;padding:.25rem .65rem;background:#eef3f8;color:#001f3f;margin:.15rem;font-size:.85rem}
+.required::after{content:" *";color:#dc3545}
+.table td,.table th{vertical-align:middle}
+.security-note{border-left:4px solid #dc3545;background:#fff5f5;padding:12px 14px;border-radius:6px}
+.spbe-note{border-left:4px solid #17a2b8;background:#f0fbff;padding:12px 14px;border-radius:6px}
+.prototype-banner{font-size:.85rem;background:#fff3cd;border:1px solid #ffeeba;color:#856404;border-radius:8px;padding:8px 12px}
+.role-badge{font-size:.85rem;white-space:normal;text-align:left}
+.status-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.dot-success{background:#28a745}.dot-warning{background:#ffc107}.dot-danger{background:#dc3545}.dot-info{background:#17a2b8}
+.print-area{background:white}
+
+/* Responsiveness improvements for mobile validation/demo */
+.table-responsive,
+.dataTables_wrapper{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.card-body{overflow-x:auto}
+img,canvas{max-width:100%}
+
+@media (max-width: 991.98px){
+  body:not(.sidebar-open) .main-sidebar{margin-left:-250px!important}
+  .content-wrapper,.main-footer,.main-header{margin-left:0!important}
+  .main-header .navbar-nav.ml-auto{max-width:72%;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+  .main-header .nav-link{padding-left:.45rem;padding-right:.45rem;font-size:.9rem}
+  .role-badge{display:none!important}
+}
+
+@media (max-width: 767.98px){
+  .content-header h1{font-size:1.35rem;line-height:1.25;margin-bottom:.35rem}
+  .content-header .text-right{text-align:left!important;margin-top:.35rem}
+  .prototype-banner{display:block;font-size:.78rem;padding:7px 9px;line-height:1.35}
+  .hero-section{padding:28px 16px;border-radius:10px;text-align:left}
+  .hero-section h1{font-size:1.55rem;line-height:1.25}
+  .hero-section p.lead{font-size:1rem}
+  .small-box h3{font-size:1.55rem}
+  .small-box p{font-size:.9rem;line-height:1.25}
+  .small-box .icon{display:none}
+  .card-title{font-size:1rem;white-space:normal;line-height:1.25}
+  .card-header>.card-tools{float:none;margin-top:.5rem}
+  .table{font-size:.84rem;min-width:720px}
+  .table th,.table td{white-space:nowrap}
+  .table.table-compact-mobile{min-width:0}
+  .btn{white-space:normal;margin-bottom:.25rem}
+  .btn-group{display:flex;flex-wrap:wrap;gap:.25rem}
+  .form-control,.custom-select,.input-group-text{font-size:.92rem}
+  .info-chip{font-size:.78rem}
+  .brand-link .brand-text{font-size:.95rem}
+}
+
+@media (max-width: 575.98px){
+  .container-fluid{padding-left:10px;padding-right:10px}
+  .row>[class*="col-"]{padding-left:8px;padding-right:8px}
+  .card-body{padding:1rem .8rem}
+  .small-box .inner{padding:10px}
+  .small-box-footer{font-size:.82rem}
+  .navbar .nav-link[href="rbac.html"]{max-width:145px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+}
+
+@media print{
+  .main-header,.main-sidebar,.content-header,.no-print,.main-footer{display:none!important}
+  .content-wrapper{margin-left:0!important}
+  .print-area{box-shadow:none!important}
+}
