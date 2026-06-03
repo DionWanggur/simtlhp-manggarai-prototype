@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIM-TLHP Manggarai | Verifikasi Bukti oleh Auditor</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700&display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="assets/simtlhp.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a></li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <span class="nav-link"><b>SIM-TLHP Kabupaten Manggarai</b></span>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-2">
+        <span class="badge badge-info role-badge mt-2"><i class="fas fa-user-lock"></i> Role Simulasi: Auditor</span>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="rbac.html"><i class="fas fa-user-circle"></i> Dionisius S. Wanggur</a></li>
+    </ul>
+  </nav>
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="profil.html" class="brand-link">
+      <span class="brand-text font-weight-bold ml-3">SIM-TLHP MANGGARAI</span>
+    </a>
+    <div class="sidebar">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info text-white-50">
+          <i class="fas fa-shield-alt mr-1"></i> Prototype Blueprint EA
+        </div>
+      </div>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+          
+          <li class="nav-item">
+            <a href="profil.html" class="nav-link ">
+              <i class="nav-icon fas fa-landmark"></i><p>Profil & Visi</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">
+              <i class="nav-icon fas fa-tachometer-alt"></i><p>Dashboard</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="input_lhp.html" class="nav-link ">
+              <i class="nav-icon fas fa-file-signature"></i><p>Input LHP/Temuan</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="rekap_tlhp.html" class="nav-link ">
+              <i class="nav-icon fas fa-table"></i><p>Rekap TLHP</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="upload_bukti.html" class="nav-link ">
+              <i class="nav-icon fas fa-upload"></i><p>Upload Bukti OPD</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="verifikasi.html" class="nav-link active">
+              <i class="nav-icon fas fa-check-double"></i><p>Verifikasi Auditor</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="bebas_temuan.html" class="nav-link ">
+              <i class="nav-icon fas fa-certificate"></i><p>Bebas Temuan</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="rbac.html" class="nav-link ">
+              <i class="nav-icon fas fa-user-shield"></i><p>RBAC & Klasifikasi</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="audit_trail.html" class="nav-link ">
+              <i class="nav-icon fas fa-history"></i><p>Audit Trail</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-8"><h1>Verifikasi Bukti oleh Auditor</h1></div>
+          <div class="col-sm-4 text-right"><span class="prototype-banner"><i class="fas fa-info-circle"></i> Prototype statis untuk validasi rancangan</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container-fluid">
+        
+<div class="card card-primary card-outline">
+  <div class="card-header"><h3 class="card-title"><i class="fas fa-check-double"></i> Antrian Verifikasi Bukti Tindak Lanjut</h3></div>
+  <div class="card-body">
+    <table class="table table-hover table-bordered table-sm datatable">
+      <thead><tr><th>Tgl Masuk</th><th>OPD</th><th>No. LHP</th><th>Temuan</th><th>File Bukti</th><th>Nilai</th><th>Status Verifikasi</th><th>Aksi</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>15/05/2026</td><td>Dinas Pendidikan</td><td>02/LHP/2026</td><td>Kekurangan volume pekerjaan fisik</td><td><a href="#"><i class="fas fa-file-pdf text-danger"></i> bukti_setor.pdf</a></td><td>15.000.000</td><td><span class="badge badge-warning">Menunggu</span></td>
+          <td><button class="btn btn-xs btn-success" onclick="showToast('Bukti dinilai sesuai. Status rekomendasi diperbarui.')"><i class="fas fa-check"></i> Sesuai</button> <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#modalTolak"><i class="fas fa-times"></i> Tolak</button></td>
+        </tr>
+        <tr>
+          <td>18/05/2026</td><td>Dinas PUPR</td><td>03/LHP/2026</td><td>SPJ belum lengkap</td><td><a href="#"><i class="fas fa-image text-info"></i> spj_lanjutan.png</a></td><td>0</td><td><span class="badge badge-info">Review</span></td>
+          <td><button class="btn btn-xs btn-success" onclick="showToast('Bukti dinilai sesuai. Status rekomendasi diperbarui.')"><i class="fas fa-check"></i> Sesuai</button> <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#modalTolak"><i class="fas fa-times"></i> Tolak</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal fade" id="modalTolak">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger"><h5 class="modal-title">Catatan Penolakan / Perbaikan Bukti</h5><button class="close text-white" data-dismiss="modal">&times;</button></div>
+      <div class="modal-body">
+        <label>Alasan belum sesuai</label>
+        <textarea class="form-control" rows="4" placeholder="Contoh: bukti setor belum mencantumkan nomor STS atau nominal belum sesuai nilai rekomendasi."></textarea>
+      </div>
+      <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal" onclick="showToast('Catatan perbaikan dikirim ke OPD.')">Kirim Catatan</button></div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </div>
+  <footer class="main-footer">
+    <strong>Prototype SIM-TLHP Manggarai</strong> | Arsitektur TOGAF ADM, RBAC, dan TCO/LCC.
+  </footer>
+</div>
+
+<div class="toast no-print" id="prototypeToast" style="position:fixed;right:20px;bottom:20px;z-index:9999" data-autohide="true">
+  <div class="toast-header bg-primary text-white"><strong class="mr-auto">SIM-TLHP</strong><button type="button" class="ml-2 mb-1 close text-white" data-dismiss="toast">&times;</button></div>
+  <div class="toast-body">Data simulasi berhasil diproses.</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/simtlhp.js"></script>
+</body>
+</html>
